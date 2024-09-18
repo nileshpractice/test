@@ -21,15 +21,15 @@ jobs:
       with:
         chrome-version: 120
         install-chromedriver: true
-    - name: Configure Chrome options
-      run: |
-        echo "chrome_options:" >> $GITHUB_ENV
-        echo "  headless: true" >> $GITHUB_ENV
-        echo "  args:" >> $GITHUB_ENV
-        echo "    - --no-sandbox" >> $GITHUB_ENV
-        echo "    - --disable-dev-shm-usage" >> $GITHUB_ENV
-        echo "    - --disable-gpu" >> $GITHUB_ENV
-        echo "    - --remote-debugging-port=9222" >> $GITHUB_ENV
+    # - name: Configure Chrome options
+    #   run: |
+    #     echo "chrome_options:" >> $GITHUB_ENV
+    #     echo "  headless: true" >> $GITHUB_ENV
+    #     echo "  args:" >> $GITHUB_ENV
+    #     echo "    - --no-sandbox" >> $GITHUB_ENV
+    #     echo "    - --disable-dev-shm-usage" >> $GITHUB_ENV
+    #     echo "    - --disable-gpu" >> $GITHUB_ENV
+    #     echo "    - --remote-debugging-port=9222" >> $GITHUB_ENV
     - name: Set up Java
       uses: actions/setup-java@v4
       with:
