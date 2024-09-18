@@ -158,6 +158,9 @@
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-help-plugin</artifactId>
 			<version>2.0</version>
+		 <configuration>
+                         <forkedProcessTimeoutInSeconds>360</forkedProcessTimeoutInSeconds>
+                 </configuration>
 		</dependency>
 
 		<dependency>
